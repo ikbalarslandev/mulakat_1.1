@@ -23,12 +23,12 @@ const PersonalInfo = () => {
     { label: "40", value: 40 },
   ];
   return (
-    <div>
-      <p>ozgecmis guncelleme tarihi</p>
+    <div className="text-gray-600">
+      <p className="my-1">Ozgecmis guncelleme tarihi</p>
       <div className="flex gap-5">
-        <Select data={dayData} label="Gun" />
-        <Select data={monthData} label="Ay" />
-        <Select data={yearData} label="Yil" />
+        <Select data={dayData} label="" placeholder="Gun" />
+        <Select data={monthData} label="" placeholder="Ay" />
+        <Select data={yearData} label="" placeholder="Yil" />
       </div>
       <div className="flex flex-col md:flex-row gap-5 my-3">
         <Select data={yearGapData} label="Yas Araligi/Min" />

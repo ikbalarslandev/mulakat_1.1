@@ -31,12 +31,12 @@ const CardTemplate = (item: CardTemplateProps) => {
   const data = item.item;
   return (
     <div className="border-2 mb-4 flex items-center py-5 justify-between bg-stone-100 pr-5 hover:border-mblue">
-      <div className="flex gap-2 items-center">
-        <Checkbox id="first" className="mr-5 ml-2" />
+      <div className="flex gap-2 items-center ">
+        <Checkbox id="first" className="mr-3 ml-2" />
         <img
           src="/user-profile.png"
           alt="hello"
-          className="w-12 h-12 rounded-full border-mblue border-2"
+          className="rounded-full border-mblue border-2 mr-2"
         />
         <div>
           <h3 className="text-gray-600 md:text-mblue">
@@ -45,6 +45,7 @@ const CardTemplate = (item: CardTemplateProps) => {
               ( {data.personal.gender} , {data.personal.age})
             </span>
           </h3>
+
           <div className="text-gray-600 hidden md:block">
             <p>
               {data.location.province}/{data.location.city}
@@ -55,15 +56,25 @@ const CardTemplate = (item: CardTemplateProps) => {
             <p>{data.employmentStatus}</p>
             <p className="text-mblue">Incelenmedi</p>
           </div>
+
+          {/* Mobile View */}
           <div className=" text-gray-600 md:hidden">
-            <div>{data.education.type}</div>
-            <div>{data.lastJob ? data.lastJob?.title : "Calismiyor"}</div>
-            <div>
+            <div className="flex gap-1">
+              <IoEyeOutline className="w-6 h-6" />
+              {data.education.type}
+            </div>
+            <div className="flex gap-1">
+              <IoEyeOutline className="w-6 h-6" />{" "}
+              {data.lastJob ? data.lastJob?.title : "Calismiyor"}
+            </div>
+            <div className="flex gap-1">
+              <IoEyeOutline className="w-6 h-6" />
               {data.location.province}/{data.location.city}
             </div>
           </div>
         </div>
       </div>
+
       <div className="text-gray-600 hidden md:block">
         <p>{data.education.school}</p>
         <p>{data.education.type}</p>

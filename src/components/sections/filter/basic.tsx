@@ -70,7 +70,7 @@ const Basic = () => {
   ];
   const radioData = ["Tum Adaylar", "Incelenenler", "Incelenmeyenler"];
   return (
-    <div className="w-full">
+    <div className="w-full text-gray-600">
       <div className="flex flex-col  md:flex-row items-center justify-between gap-5">
         <Select data={positionData} label="Pozisyon" />
         <Select data={genderData} label="Cinsiyet" />

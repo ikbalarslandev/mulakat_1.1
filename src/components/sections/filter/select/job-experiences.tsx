@@ -23,7 +23,7 @@ const JobExperiences = () => {
   ];
 
   return (
-    <div>
+    <div className="text-gray-600">
       <div className="flex gap-5 flex-col md:flex-row">
         <Select data={jobtypeData} label="Calisma Sekli Seciniz" />
         <Select data={salaryData} label="Ucret Beklentisi" />

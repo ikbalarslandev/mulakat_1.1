@@ -9,7 +9,7 @@ function RadioGroup({ data }: { data: string[] }) {
 
   return (
     <div className="flex flex-col md:flex-row my-5 gap-5 text-gray-600">
-      {data.map((item: any) => (
+      {data.map((item: string) => (
         <div className="flex items-center space-x-2">
           <input
             type="radio"
