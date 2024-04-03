@@ -1,9 +1,9 @@
-import Main from "./components/Main";
+import Filter from "./components/sections/Filter";
 
 function App() {
   return (
-    <main>
-      <Main />
+    <main className="m-5">
+      <Filter />
     </main>
   );
 }
