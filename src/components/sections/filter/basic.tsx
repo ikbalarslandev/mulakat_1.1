@@ -2,7 +2,7 @@ import Select from "./ui-components/select";
 import RadioGroup from "./ui-components/radio";
 
 const Basic = () => {
-  const Positiondata = [
+  const positionData = [
     {
       value: "Satis Temsilcisi",
       label: "Satis Temsilcisi",
@@ -16,7 +16,7 @@ const Basic = () => {
       label: "Is guvenligi uzmani",
     },
   ];
-  const genderdata = [
+  const genderData = [
     {
       value: "Erkek",
       label: "Erkek",
@@ -26,7 +26,7 @@ const Basic = () => {
       label: "Kadin",
     },
   ];
-  const experiencedata = [
+  const experienceData = [
     {
       value: "1-3",
       label: "1-3",
@@ -40,7 +40,7 @@ const Basic = () => {
       label: "5-10",
     },
   ];
-  const citydata = [
+  const cityData = [
     {
       value: "Istanbul",
       label: "Istanbul",
@@ -54,7 +54,7 @@ const Basic = () => {
       label: "Izmir",
     },
   ];
-  const provincedata = [
+  const provinceData = [
     {
       value: "Kadikoy",
       label: "Kadikoy",
@@ -72,13 +72,13 @@ const Basic = () => {
   return (
     <div className="w-full">
       <div className="flex items-center justify-between gap-5">
-        <Select data={Positiondata} label="Pozisyon" />
-        <Select data={genderdata} label="Cinsiyet" />
-        <Select data={experiencedata} label="Deneyim" />
+        <Select data={positionData} label="Pozisyon" />
+        <Select data={genderData} label="Cinsiyet" />
+        <Select data={experienceData} label="Deneyim" />
       </div>
       <div className=" flex items-center justify-between gap-5 my-3">
-        <Select data={citydata} label="Sehir" />
-        <Select data={provincedata} label="Ilce" />
+        <Select data={cityData} label="Sehir" />
+        <Select data={provinceData} label="Ilce" />
       </div>
       <RadioGroup data={radioData} />
     </div>

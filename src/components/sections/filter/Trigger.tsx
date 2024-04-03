@@ -9,7 +9,7 @@ import {
 
 const Trigger = () => {
   return (
-    <div className="flex items-center justify-between text-blue-800">
+    <div className="flex items-center justify-between text-mblue">
       <AccordionTrigger className="text-lg ">Aday Filtrele</AccordionTrigger>
       <div className="flex gap-8">
         <p>
@@ -21,7 +21,7 @@ const Trigger = () => {
             <IoIosSearch className="w-5 h-5" />
             Kayitli Aramalarim
           </HoverCardTrigger>
-          <HoverCardContent className="flex flex-col text-blue-800">
+          <HoverCardContent className="flex flex-col text-mblue">
             <p>demo</p>
             <p>demo</p>
             <p>demo</p>

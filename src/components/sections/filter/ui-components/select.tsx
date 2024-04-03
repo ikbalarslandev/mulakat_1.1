@@ -17,7 +17,7 @@ const Select = ({ data, label }: any) => {
     <div className="flex-1 ">
       <p className="text-gray-600">{label}</p>
       <button
-        className="bg-white border border-blue-800 rounded-md shadow-sm px-4 py-2 w-full text-left "
+        className="bg-white border border-mblue rounded-md shadow-sm px-4 py-2 w-full text-left "
         onClick={toggleDropdown}
       >
         {selected ? selected : "Seciniz"}

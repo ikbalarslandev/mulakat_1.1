@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-function RadioGroup({ data }: any) {
-  const [selectedValue, setSelectedValue] = useState("comfortable");
+function RadioGroup({ data }: { data: string[] }) {
+  const [selectedValue, setSelectedValue] = useState<string>("comfortable");
 
-  const handleChange = (value: any) => {
+  const handleChange = (value: string) => {
     setSelectedValue(value);
   };
 

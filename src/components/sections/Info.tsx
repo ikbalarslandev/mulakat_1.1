@@ -5,7 +5,6 @@ const Info = () => {
   return (
     <section>
       <Header />
-
       <Cards />
     </section>
   );

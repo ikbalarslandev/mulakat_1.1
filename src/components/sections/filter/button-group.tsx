@@ -5,7 +5,7 @@ const ButtonGroup = () => {
     <div className="flex gap-5">
       <Button>Filtreleri Temizle</Button>
       <Button className="bg-orange-700">Filtreleri Kaydet</Button>
-      <Button className="bg-blue-800">Filtrele</Button>
+      <Button className="bg-mblue">Filtrele</Button>
     </div>
   );
 };

@@ -1,12 +1,12 @@
 import Select from "../ui-components/select";
 
 const JobExperiences = () => {
-  const jobtypedata = [
+  const jobtypeData = [
     { label: "Full Time", value: "Full Time" },
     { label: "Part Time", value: "Part Time" },
     { label: "Internship", value: "Internship" },
   ];
-  const salarydata = [
+  const salaryData = [
     { label: "1000-2000", value: "1000-2000" },
     { label: "2000-3000", value: "2000-3000" },
     { label: "3000-4000", value: "3000-4000" },
@@ -25,8 +25,8 @@ const JobExperiences = () => {
   return (
     <div>
       <div className="flex gap-5">
-        <Select data={jobtypedata} label="Calisma Sekli Seciniz" />
-        <Select data={salarydata} label="Ucret Beklentisi" />
+        <Select data={jobtypeData} label="Calisma Sekli Seciniz" />
+        <Select data={salaryData} label="Ucret Beklentisi" />
       </div>
       <div className="flex gap-5 my-3">
         <Select data={experienceAreaData} label="Deneyim Sektoru" />

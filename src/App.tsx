@@ -3,9 +3,9 @@ import Info from "./components/sections/Info";
 
 function App() {
   return (
-    <main className="m-5 text-blue-800 ">
+    <main className="m-5 text-mblue ">
       <Filter />
-      {/* <Info /> */}
+      <Info />
     </main>
   );
 }

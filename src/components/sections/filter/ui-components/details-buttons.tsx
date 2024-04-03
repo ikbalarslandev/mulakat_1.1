@@ -1,6 +1,11 @@
 import { Button } from "../../../ui/button";
 
-const DetailsButtons = ({ active, setActive }: any) => {
+interface DetailsButtonsProps {
+  active: string;
+  setActive: (value: string) => void;
+}
+
+const DetailsButtons = ({ active, setActive }: DetailsButtonsProps) => {
   return (
     <div className="w-full flex gap-3 mb-5">
       <Button

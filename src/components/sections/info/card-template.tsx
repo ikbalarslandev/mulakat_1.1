@@ -18,7 +18,7 @@ interface CardTemplateProps {
       school: string;
       type: string;
     };
-    lastJob: {
+    lastJob?: {
       title: string;
       company: string;
       begin: string;
@@ -30,13 +30,13 @@ interface CardTemplateProps {
 const CardTemplate = (item: CardTemplateProps) => {
   const data = item.item;
   return (
-    <div className="border-2 mb-4 flex items-center py-5 justify-between bg-stone-100 pr-5 hover:border-blue-800">
+    <div className="border-2 mb-4 flex items-center py-5 justify-between bg-stone-100 pr-5 hover:border-mblue">
       <div className="flex gap-2 items-center">
         <Checkbox id="first" className="mr-5 ml-2" />
         <img
           src="/user-profile.png"
           alt="hello"
-          className="w-12 h-12 rounded-full border-blue-800 border-2"
+          className="w-12 h-12 rounded-full border-mblue border-2"
         />
         <div>
           <h3>{data.name}</h3>
@@ -58,7 +58,7 @@ const CardTemplate = (item: CardTemplateProps) => {
       </div>
       {data.lastJob ? (
         <div className="text-gray-600">
-          <h3 className="text-blue-800">{data.lastJob.title}</h3>
+          <h3 className="text-mblue">{data.lastJob.title}</h3>
           <p>{data.lastJob.company}</p>
           <p>
             {data.lastJob.begin}/{data.lastJob.end}

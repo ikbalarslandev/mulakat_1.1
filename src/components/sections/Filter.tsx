@@ -16,9 +16,9 @@ const Filter = () => {
         <Trigger />
 
         <AccordionContent>
-          {/* <Basic /> */}
-          {/* <ButtonGroup /> */}
+          <Basic />
           <Details />
+          <ButtonGroup />
         </AccordionContent>
       </AccordionItem>
     </Accordion>
