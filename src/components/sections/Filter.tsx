@@ -6,7 +6,8 @@ import {
 
 import Trigger from "./filter/Trigger";
 import Basic from "./filter/basic";
-import ButtonGroup from "./filter/ui-components/button-group";
+import ButtonGroup from "./filter/button-group";
+import Details from "./filter/details";
 
 const Filter = () => {
   return (
@@ -15,8 +16,9 @@ const Filter = () => {
         <Trigger />
 
         <AccordionContent>
-          <Basic />
-          <ButtonGroup />
+          {/* <Basic /> */}
+          {/* <ButtonGroup /> */}
+          <Details />
         </AccordionContent>
       </AccordionItem>
     </Accordion>
