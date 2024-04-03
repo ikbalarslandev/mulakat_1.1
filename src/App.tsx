@@ -5,7 +5,7 @@ function App() {
   return (
     <main className="m-5 text-blue-800 ">
       <Filter />
-      <Info />
+      {/* <Info /> */}
     </main>
   );
 }

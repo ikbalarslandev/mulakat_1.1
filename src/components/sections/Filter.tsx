@@ -5,6 +5,7 @@ import {
 } from "@/components/ui/accordion";
 
 import Trigger from "./filter/Trigger";
+import Basic from "./filter/basic";
 
 const Filter = () => {
   return (
@@ -12,7 +13,9 @@ const Filter = () => {
       <AccordionItem value="item-1">
         <Trigger />
 
-        <AccordionContent>Hello</AccordionContent>
+        <AccordionContent>
+          <Basic />
+        </AccordionContent>
       </AccordionItem>
     </Accordion>
   );
