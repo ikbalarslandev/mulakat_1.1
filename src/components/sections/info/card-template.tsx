@@ -39,8 +39,13 @@ const CardTemplate = (item: CardTemplateProps) => {
           className="w-12 h-12 rounded-full border-mblue border-2"
         />
         <div>
-          <h3>{data.name}</h3>
-          <div className="text-gray-600">
+          <h3 className="text-gray-600 md:text-mblue">
+            {data.name}{" "}
+            <span className="md:hidden">
+              ( {data.personal.gender} , {data.personal.age})
+            </span>
+          </h3>
+          <div className="text-gray-600 hidden md:block">
             <p>
               {data.location.province}/{data.location.city}
             </p>
@@ -48,26 +53,35 @@ const CardTemplate = (item: CardTemplateProps) => {
               {data.personal.gender}/{data.personal.age}
             </p>
             <p>{data.employmentStatus}</p>
+            <p className="text-mblue">Incelenmedi</p>
           </div>
-          <p>Incelenmedi</p>
+          <div className=" text-gray-600 md:hidden">
+            <div>{data.education.type}</div>
+            <div>{data.lastJob ? data.lastJob?.title : "Calismiyor"}</div>
+            <div>
+              {data.location.province}/{data.location.city}
+            </div>
+          </div>
         </div>
       </div>
-      <div className="text-gray-600">
+      <div className="text-gray-600 hidden md:block">
         <p>{data.education.school}</p>
         <p>{data.education.type}</p>
       </div>
       {data.lastJob ? (
-        <div className="text-gray-600">
+        <div className="text-gray-600 hidden md:block">
           <h3 className="text-mblue">{data.lastJob.title}</h3>
           <p>{data.lastJob.company}</p>
           <p>
-            {data.lastJob.begin}/{data.lastJob.end}
+            {data.lastJob.begin} / {data.lastJob.end}
           </p>
         </div>
       ) : (
-        <p className="text-gray-600">is Deneyimi Belirtilmemiş</p>
+        <p className="text-gray-600 hidden md:block">
+          is Deneyimi Belirtilmemiş
+        </p>
       )}
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex-col items-center gap-4 hidden md:flex">
         <FaListOl className="w-6 h-6" />
         <IoEyeOutline className="w-6 h-6" />
       </div>
