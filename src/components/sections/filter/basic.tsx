@@ -71,12 +71,12 @@ const Basic = () => {
   const radioData = ["Tum Adaylar", "Incelenenler", "Incelenmeyenler"];
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between gap-5">
+      <div className="flex flex-col  md:flex-row items-center justify-between gap-5">
         <Select data={positionData} label="Pozisyon" />
         <Select data={genderData} label="Cinsiyet" />
         <Select data={experienceData} label="Deneyim" />
       </div>
-      <div className=" flex items-center justify-between gap-5 my-3">
+      <div className=" flex flex-col  md:flex-row items-center justify-between gap-5 my-3">
         <Select data={cityData} label="Sehir" />
         <Select data={provinceData} label="Ilce" />
       </div>

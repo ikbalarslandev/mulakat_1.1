@@ -30,11 +30,11 @@ const PersonalInfo = () => {
         <Select data={monthData} label="Ay" />
         <Select data={yearData} label="Yil" />
       </div>
-      <div className="flex gap-5 my-3">
+      <div className="flex flex-col md:flex-row gap-5 my-3">
         <Select data={yearGapData} label="Yas Araligi/Min" />
         <Select data={yearGapData} label="Yas Araligi/Max" />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-col md:flex-row">
         <div>
           <p>Medeni Hal</p>
           <RadioGroup data={["Fark Etmez", "Evli", "Bekar"]} />

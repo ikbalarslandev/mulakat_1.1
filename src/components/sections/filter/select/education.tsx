@@ -18,7 +18,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 flex-col md:flex-row my-8">
       <Select data={educationLevelData} label="Egitim Seviyesi" />
       <Select data={educationFieldData} label="Bolum" />
       <Select data={universityData} label="Universite" />

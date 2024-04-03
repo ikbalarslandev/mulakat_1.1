@@ -11,7 +11,7 @@ const Trigger = () => {
   return (
     <div className="flex items-center justify-between text-mblue">
       <AccordionTrigger className="text-lg ">Aday Filtrele</AccordionTrigger>
-      <div className="flex gap-8">
+      <div className=" gap-8 hidden md:flex">
         <p>
           CV Goruntuleme Hakki: <span className="text-orange-600">47</span>
         </p>

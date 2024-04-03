@@ -24,11 +24,11 @@ const JobExperiences = () => {
 
   return (
     <div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 flex-col md:flex-row">
         <Select data={jobtypeData} label="Calisma Sekli Seciniz" />
         <Select data={salaryData} label="Ucret Beklentisi" />
       </div>
-      <div className="flex gap-5 my-3">
+      <div className="flex gap-5 my-8 flex-col md:flex-row ">
         <Select data={experienceAreaData} label="Deneyim Sektoru" />
         <Select data={experienceSectionData} label="Deneyim Bolumu" />
       </div>

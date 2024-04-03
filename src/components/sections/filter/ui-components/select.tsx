@@ -14,7 +14,7 @@ const Select = ({ data, label }: any) => {
   };
 
   return (
-    <div className="flex-1 ">
+    <div className="flex-1 w-full">
       <p className="text-gray-600">{label}</p>
       <button
         className="bg-white border border-mblue rounded-md shadow-sm px-4 py-2 w-full text-left "

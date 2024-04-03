@@ -7,7 +7,7 @@ interface DetailsButtonsProps {
 
 const DetailsButtons = ({ active, setActive }: DetailsButtonsProps) => {
   return (
-    <div className="w-full flex gap-3 mb-5">
+    <div className="w-full flex gap-3 mb-5 min-w-[500px]">
       <Button
         variant={active === "Kisisel Bilgiler" ? "detailsActive" : "details"}
         onClick={() => setActive("Kisisel Bilgiler")}

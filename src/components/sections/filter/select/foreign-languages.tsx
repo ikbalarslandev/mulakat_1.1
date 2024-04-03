@@ -14,7 +14,7 @@ const ForeignLanguages = () => {
   ];
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 flex-col md:flex-row my-8">
       <Select data={languageData} label="Yabanci Dil" />
       <Select data={languageLevelData} label="Yabanci Dil Seviyesi" />
     </div>
